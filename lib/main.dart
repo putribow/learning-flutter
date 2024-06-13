@@ -102,7 +102,20 @@ class _MyHomePageState extends State<MyHomePage> {
           label: 'History',),
           ],
           ),
-      body: Container(
+      body: Container(decoration: BoxDecoration(
+            //jumlah stop berbanding lurus dengan jumlah warna
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomCenter,
+                //jumlah stop berbanding lurus dengan jumlah warna
+                stops: [0.3, 0.6, 0.9],
+                colors: [
+                  Color.fromRGBO(12, 235, 235, 1),
+                  Color.fromRGBO(32, 227, 178, 1),
+                  Color.fromRGBO(41, 255, 198, 1),
+                ],
+              ),
+            ),
         child: page,
       ),
     );
